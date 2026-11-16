@@ -10,6 +10,20 @@ Foco na **Situação-problema 2 – Tratamento de Exceções e Validação de Da
 - Regra de negócio: não permite o mesmo filme (título + ano) duas vezes.
 - Erros técnicos (banco fora do ar, id inexistente) mostram página amigável; o detalhe vai só para o log.
 
+## Telas
+
+| Listagem | Cadastro com sucesso |
+|---|---|
+| ![Listagem de filmes](docs/prints/1-listagem.jpg) | ![Cadastro com sucesso](docs/prints/2-cadastro-sucesso.jpg) |
+
+| Validação com erros por campo | Busca por título |
+|---|---|
+| ![Validação com erros](docs/prints/3-validacao-erros.jpg) | ![Busca](docs/prints/4-busca.jpg) |
+
+| Filme não encontrado (erro tratado) |
+|---|
+| ![Filme não encontrado](docs/prints/5-filme-nao-encontrado.jpg) |
+
 ## Arquitetura (MVC em camadas)
 ```
 JSP (view) → FilmeServlet (controller) → FilmeValidator → FilmeService (regras) → FilmeDAO/FilmeDAOJdbc → MySQL
