@@ -1,0 +1,12 @@
+# Saida do Maven
+target/
+
+# Banco H2 local (gerado ao rodar)
+data/
+
+# IDEs
+.idea/
+*.iml
+.classpath
+.project
+.settings/

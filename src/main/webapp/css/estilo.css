@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; background: #f4f5f7; color: #222; }
+.container { max-width: 960px; margin: 32px auto; padding: 0 16px; }
+h1 { margin-bottom: 20px; }
+.barra { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 16px 0; flex-wrap: wrap; }
+.busca { display: flex; gap: 8px; }
+input, select, textarea { width: 100%; padding: 8px; border: 1px solid #bbb; border-radius: 6px; font: inherit; }
+.busca input { width: 260px; }
+button, .botao { background: #2b5cd6; color: #fff; border: 0; border-radius: 6px; padding: 8px 14px; cursor: pointer; text-decoration: none; font: inherit; }
+button.link { background: none; color: #2b5cd6; padding: 0; }
+button.perigo { color: #c62828; }
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #eee; }
+th { background: #e9ecf3; }
+.acoes { display: flex; gap: 12px; align-items: center; }
+.acoes form { margin: 0; }
+.alerta { padding: 10px 14px; border-radius: 6px; margin-bottom: 16px; }
+.sucesso { background: #e3f4e5; color: #1b5e20; }
+.erro { background: #fdecea; color: #b71c1c; }
+.formulario { background: #fff; padding: 20px; border-radius: 8px; display: grid; gap: 14px; }
+.formulario label { display: grid; gap: 4px; font-weight: 600; }
+.linha { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.msg { color: #c62828; font-weight: 400; font-size: .9em; min-height: 1em; }
+.invalido input, .invalido select, .invalido textarea { border-color: #c62828; background: #fff7f7; }
+.vazio, .total { color: #666; }
+@media (max-width: 600px) { .linha { grid-template-columns: 1fr; } .busca input { width: 100%; } }

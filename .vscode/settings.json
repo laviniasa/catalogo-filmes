@@ -1,0 +1,5 @@
+{
+    "maven.executable.path": "${env:USERPROFILE}\\tools\\apache-maven-3.9.9\\bin\\mvn.cmd",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "files.encoding": "utf8"
+}

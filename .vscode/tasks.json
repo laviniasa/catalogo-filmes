@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Rodar catalogo (Jetty)",
+            "type": "shell",
+            "command": "${env:USERPROFILE}\\tools\\apache-maven-3.9.9\\bin\\mvn.cmd",
+            "args": ["jetty:run"],
+            "group": { "kind": "build", "isDefault": true },
+            "isBackground": true,
+            "problemMatcher": []
+        },
+        {
+            "label": "Rodar testes",
+            "type": "shell",
+            "command": "${env:USERPROFILE}\\tools\\apache-maven-3.9.9\\bin\\mvn.cmd",
+            "args": ["test"],
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "Gerar WAR (para Tomcat)",
+            "type": "shell",
+            "command": "${env:USERPROFILE}\\tools\\apache-maven-3.9.9\\bin\\mvn.cmd",
+            "args": ["clean", "package"],
+            "problemMatcher": []
+        }
+    ]
+}
